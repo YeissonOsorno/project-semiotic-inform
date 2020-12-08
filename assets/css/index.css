@@ -1,0 +1,24 @@
+/*
+ * Globals
+ */
+
+
+/*
+ * Base structure
+ */
+
+body {
+    margin-top: 10%;
+    background-color: #455a64;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 10%;
+        background-color: #455a64;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
