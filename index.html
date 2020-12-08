@@ -13,12 +13,12 @@
 </head>
 
 <body>
-
+    <!-- View Splash -->
     <div class="container">
         <div class="row text-center mt-auto">
             <div class="col-sm12 col-md-12 col-lg-12 mt-auto">
                 <main role="main" class="inner cover mt-auto">
-                    <img src="assets/images/logo.png" alt="Image Logo" class="animate__animated animate__fadeIn">
+                    <img src="assets/images/logo.png" alt="Image Logo" class="animate__animated animate__pulse">
                 </main>
             </div>
         </div>
@@ -29,6 +29,15 @@
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        //Redirect to login after 2500 ms
+        $(document).ready(function() {
+            let currentLocation = window.location.href;
+            setTimeout(function() {
+                window.location.href = currentLocation.replace('index.html', 'login.html')
+            }, 2500)
+        });
+    </script>
 </body>
 
 </html>
