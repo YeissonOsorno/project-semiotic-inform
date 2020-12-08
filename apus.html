@@ -58,21 +58,31 @@
   </nav>
 
   <ul id="items">
-    <li>
-        <a>item 1</a>
-    </li>
-    <li>
-        <a>item 2</a>
-    </li>
-    <li>
-        <a>item 3</a>
-    </li>
+
   </ul>
+
+  <div class="modal fade" id="mostrarmodal" tabindex="-1″ role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h3>titulo de la ventana</h3>
+    </div>
+    <div class="modal-body">
+    <h4>Texto de la ventana</h4>
+    Mas texto en la ventana.
+    </div>
+    <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+    </div>
+    </div>
+    </div>
+    </div>
 
     <!--require popper, jquery and js of bootstrap-->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/apus.js"></script>
 </body>
 
 </html>
