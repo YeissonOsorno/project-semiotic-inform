@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/images/logo.ico" type="image/png" />
     <!--require css styles of bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/suggestions.css">
     <title>Semiontic Inform</title>
 </head>
 
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#">APUs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./cart.html">Carro de compras</a>
+                    <a class="nav-link" href="#">Carro de compras</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./creditos.html">Creditos</a>
@@ -45,17 +45,18 @@
     </nav>
     <!-- End section navbar-->
     <main role="main">
-        <div class="400px text-center">
-            <div class="container">
-                <img src="assets/images/logo-claro.webp" width="500" height="500">
-                <p>
-                    Si eres una de las primeras 100 personas en descargar la app, ganarás totalmente gratis la verion premium
-                </p>
-                <p><a class="btn btn-secondary btn-lg" href="https://brandongarciarestr.wixsite.com/blgs" target="_blank">Manual</a></p>
-            </div>
+        <div class="container marketing text-center  mt-4">
+            <form class="form-signin text-center">
+                <h1 class="h3 mb-3 font-weight-normal text-secondary ">Sugerencias</h1>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus="">
+                <br>
+                <textarea class="form-control" placeholder="¿En qué podemos mejorar?" rows="5"></textarea>
+                <br>
+                <button class="btn btn-lg btn-secondary btn-block" type="submit">Enviar</button>
+            </form>
         </div>
     </main>
-
 
     <!--require popper, jquery and js of bootstrap-->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
