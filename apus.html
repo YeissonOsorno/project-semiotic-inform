@@ -8,11 +8,11 @@
     <link rel="icon" href="assets/images/logo.ico" type="image/png" />
     <!--require css styles of bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/apus.css">
     <title>Semiontic Inform</title>
 </head>
 
-<body>
+<body style="background: #f8f9fa !important;">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
         <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,13 +45,30 @@
     </nav>
     <!-- End section navbar-->
 
+    <!-- Start searchBar-->
 
-<ul>
+  
+<!-- Search form -->
+
+<nav class="navbar navbar-light bg-light justify-content-center" >
+    <form class="form-inline">
+      <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search" style="width: 300px !important;">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <ul id="items">
     <li>
-        <a></a>
+        <a>item 1</a>
     </li>
-</ul>
-    <h1>APUs Workit</h1>
+    <li>
+        <a>item 2</a>
+    </li>
+    <li>
+        <a>item 3</a>
+    </li>
+  </ul>
+
     <!--require popper, jquery and js of bootstrap-->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
