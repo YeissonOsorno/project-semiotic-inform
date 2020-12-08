@@ -49,11 +49,11 @@
             <form class="form-signin text-center">
                 <h1 class="h3 mb-3 font-weight-normal text-secondary  animate__animated animate__pulse">Sugerencias</h1>
                 <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus="">
+                <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" name="inputEmail" required autofocus="">
                 <br>
-                <textarea class="form-control" placeholder="¿En qué podemos mejorar?" rows="5"></textarea>
+                <textarea class="form-control" id="textAreaMessage" placeholder="¿En qué podemos mejorar?" required rows="5"></textarea>
                 <br>
-                <button class="btn btn-lg btn-secondary btn-block animate__animated animate__pulse" type="submit">Enviar</button>
+                <button class="btn btn-lg btn-secondary btn-block animate__animated animate__pulse" type="button" onclick="save()">Enviar</button>
             </form>
         </div>
     </main>
@@ -62,6 +62,7 @@
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/suggestions.js"></script>
 </body>
 
 </html>
