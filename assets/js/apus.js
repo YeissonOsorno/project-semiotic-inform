@@ -109,6 +109,102 @@ $("#mostrarmodal").modal("show");
 
 }
 
+function listModal3(){
+    document.querySelector("#containerModal").innerHTML = `
+    
+    <div class="modal fade" id="mostrarmodal" tabindex="-1″ role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header" style="text-align: center;justify-content: center;">
+    <div style="display="display:block"">
+    <h5>Codigo= ${datosModal[3].id}</h5>
+    <h4>Nombre= ${datosModal[3].name}</h4>
+    </div>
+    </div>
+    <div class="modal-body">
+    <div style="display:flex">
+    <h4>Unidad= ${datosModal[3].unity}</h4>
+    <h4 style="margin-left:100px">Cantidad= ${datosModal[3].quantity}</h4>
+    </div>
+    </div>
+    <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+        `;
+    
+    
+    $("#mostrarmodal").modal("show");
+    
+    }
+
+    function listModal4(){
+        document.querySelector("#containerModal").innerHTML = `
+        
+        <div class="modal fade" id="mostrarmodal" tabindex="-1″ role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header" style="text-align: center;justify-content: center;">
+        <div style="display="display:block"">
+        <h5>Codigo= ${datosModal[4].id}</h5>
+        <h4>Nombre= ${datosModal[4].name}</h4>
+        </div>
+        </div>
+        <div class="modal-body">
+        <div style="display:flex">
+        <h4>Unidad= ${datosModal[4].unity}</h4>
+        <h4 style="margin-left:100px">Cantidad= ${datosModal[4].quantity}</h4>
+        </div>
+        </div>
+        <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+            `;
+        
+        
+        $("#mostrarmodal").modal("show");
+        
+        }
+
+        function listModal5(){
+            document.querySelector("#containerModal").innerHTML = `
+            
+            <div class="modal fade" id="mostrarmodal" tabindex="-1″ role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header" style="text-align: center;justify-content: center;">
+            <div style="display="display:block"">
+            <h5>Codigo= ${datosModal[5].id}</h5>
+            <h4>Nombre= ${datosModal[5].name}</h4>
+            </div>
+            </div>
+            <div class="modal-body">
+            <div style="display:flex">
+            <h4>Unidad= ${datosModal[5].unity}</h4>
+            <h4 style="margin-left:100px">Cantidad= ${datosModal[5].quantity}</h4>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+                `;
+            
+            
+            $("#mostrarmodal").modal("show");
+            
+            }
+
 function btnSearch(){
 var search = document.querySelector("#searchbox").value;
 var datos = JSON.parse(localStorage.getItem("products"));
