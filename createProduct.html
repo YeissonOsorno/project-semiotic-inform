@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/images/logo.ico" type="image/png" />
     <!--require css styles of bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/createProduct.css">
     <title>Semiontic Inform</title>
 </head>
 
@@ -43,23 +43,24 @@
             </ul>
         </div>
     </nav>
-    <!-- End section navbar-->
-    <main role="main" class="container text-center mt-5">
-
-        <div class="starter-template">
-            <h1>Productos</h1>
-            <p class="lead">Aquí podrás encontrar las operaciones de <br> crear, editar y eliminar los productos</p>
-        </div>
-        <div class="starter-template">
-            <a href="./createProduct.html" class="btn btn-secondary btn-lg btn-block mb-3">Crear</a>
-            <a href="./editProduct.html" class="btn btn-secondary btn-lg btn-block mb-3">Editar</a>
-        </div>
-
-    </main>
+    <form class="form-signin text-center mt-5">
+        <h1 class="h3 mb-3 font-weight-normal ">Agregar producto</h1>
+        <label for="inputproductname" class="sr-only">Nombre del Producto</label>
+        <input type="text" id="inputproductname" class="form-control" placeholder="Nombre del producto" required>
+        <br>
+        <label for="inputproductunity" class="sr-only">Unidad en la que se mide el producto</label>
+        <input type="text" id="inputproductunity" class="form-control" placeholder="Unidad en la que se mide el producto" required>
+        <br>
+        <label for="inputproductquantity" class="sr-only">Cantidad del producto</label>
+        <input type="text" id="inputproductquantity" class="form-control" placeholder="Cantidad del producto" required>
+        <br>
+        <button class="btn btn-lg btn-secondary btn-block" type="button" onclick="add()">Agregar</button>
+    </form>
     <!--require popper, jquery and js of bootstrap-->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/createProduct.js"></script>
 </body>
 
 </html>
