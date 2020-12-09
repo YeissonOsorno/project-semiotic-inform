@@ -28,7 +28,7 @@
                     <a class="nav-link" href="./products.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./apus.html">APUs</a>
+                    <a class="nav-link" href="./apusIntro.html">APUs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./cart.html">Carro de compras</a>
@@ -52,8 +52,8 @@
 
 <nav class="navbar navbar-light bg-light justify-content-center" >
     <form class="form-inline">
-      <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search" style="width: 300px !important;">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search" style="width: 300px !important;" id="searchbox">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="btnSearch()">Search</button>
     </form>
   </nav>
 
@@ -61,21 +61,8 @@
 
   </ul>
 
-  <div class="modal fade" id="mostrarmodal" tabindex="-1″ role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-        <h3>titulo de la ventana</h3>
-    </div>
-    <div class="modal-body">
-    <h4>Texto de la ventana</h4>
-    Mas texto en la ventana.
-    </div>
-    <div class="modal-footer">
-    <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
-    </div>
-    </div>
-    </div>
+  <div id="containerModal">
+   
     </div>
 
     <!--require popper, jquery and js of bootstrap-->

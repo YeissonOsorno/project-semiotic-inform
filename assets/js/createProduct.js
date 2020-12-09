@@ -2,6 +2,8 @@ let products = []
 
 function add() {
     let product = {}
+    product.id = Math.floor(Math.random() * 101);
+    console.log( product.id);
     product.name = document.getElementById('inputproductname').value;
     product.unity = document.getElementById('inputproductunity').value;
     product.quantity = document.getElementById('inputproductquantity').value;
