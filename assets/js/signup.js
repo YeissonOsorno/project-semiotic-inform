@@ -19,10 +19,16 @@ function signup() {
             users.push(user);
             localStorage.setItem("users", JSON.stringify(users));
             alert("Usuario creado correctamente")
+            setTimeout(function() {
+                window.location.href = window.location.href.replace('signup.html', 'login.html')
+            }, 500)
         } else {
             users.push(user);
             localStorage.setItem("users", JSON.stringify(users));
             alert("Usuario creado correctamente")
+            setTimeout(function() {
+                window.location.href = window.location.href.replace('signup.html', 'login.html')
+            }, 500)
         }
     }
 }

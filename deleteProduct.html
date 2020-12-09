@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/images/logo.ico" type="image/png" />
     <!--require css styles of bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/createProduct.css">
     <title>Semiontic Inform</title>
 </head>
 
@@ -43,24 +43,22 @@
             </ul>
         </div>
     </nav>
-    <!-- End section navbar-->
-    <main role="main" class="container text-center mt-5">
+    <form class="form-signin text-center mt-5">
+        <h1 class="h3 mb-3 font-weight-normal ">Eliminar producto</h1>
+        <select name="values" id="selectOptions" class="btn-block mb-5">
+            <option value="1">Selecciona una producto</option>
+        </select>
+        <label for="inputproductname" class="sr-only">Nombre del Producto</label>
+        <input type="text" id="inputproductname" class="form-control" placeholder="Nombre del producto" required disabled>
+        <br>
 
-        <div class="starter-template">
-            <h1>Productos</h1>
-            <p class="lead">Aquí podrás encontrar las operaciones de <br> crear, editar y eliminar los productos</p>
-        </div>
-        <div class="starter-template">
-            <a href="./createProduct.html" class="btn btn-secondary btn-lg btn-block mb-3">Crear</a>
-            <a href="./editProduct.html" class="btn btn-secondary btn-lg btn-block mb-3">Editar</a>
-            <a href="./deleteProduct.html" class="btn btn-secondary btn-lg btn-block mb-3">Eliminar</a>
-        </div>
-
-    </main>
+        <button class="btn btn-lg btn-secondary btn-block" type="button" onclick="deleteProduct()">Eliminar</button>
+    </form>
     <!--require popper, jquery and js of bootstrap-->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/deleteProduct.js"></script>
 </body>
 
 </html>

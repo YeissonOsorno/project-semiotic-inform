@@ -9,11 +9,17 @@ function save() {
     if (result.Error) {
         localStorage.setItem("suggestions", JSON.stringify(suggestions));
         alert("Sugerencia enviada correctamente")
+        setTimeout(function() {
+            window.location.href = window.location.href
+        }, 500)
     } else {
         suggestions = result;
         suggestions.push(suggestion)
         localStorage.setItem("suggestions", JSON.stringify(suggestions));
         alert("Sugerencia enviada correctamente")
+        setTimeout(function() {
+            window.location.href = window.location.href
+        }, 500)
     }
 }
 
