@@ -13,6 +13,11 @@ selected.addEventListener('change',
         getEditProduct(selectedOption.text);
     });
 
+function validar() {
+    if (name.value == "") return alert("Debes seleccionar una opcion")
+    deleteProduct()
+}
+
 function getProducts() {
     let producs = localStorage.getItem('products');
     if (producs == null) {

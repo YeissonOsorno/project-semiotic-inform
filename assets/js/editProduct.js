@@ -2,6 +2,7 @@ $(document).ready(function() {
     getProducts();
 });
 
+
 var products = []
 let newProduct = {}
 let selected = document.getElementById('selectOptions');
@@ -14,6 +15,15 @@ selected.addEventListener('change',
         var selectedOption = this.options[selected.selectedIndex];
         getEditProduct(selectedOption.text);
     });
+
+
+function validar() {
+    if (name.value == "") return alert('El campo nombre no puede ir vacio, seleccione un producto de la lista');
+    if (unity.value == "") return alert('El campo unidad no puede ir vacio, seleccione un producto de la lista');
+    if (quantity.value == "") return alert('El campo cantidad no puede ir vacio, seleccione un producto de la lista');
+    if (isNaN(Number(quantity.value))) return alert('Solo se permite numeros en el campo cantidad')
+    editProduct()
+}
 
 function getProducts() {
     let producs = localStorage.getItem('products');

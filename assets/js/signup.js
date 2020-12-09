@@ -1,5 +1,21 @@
 var users = [];
 
+function validar() {
+    let name = document.querySelector("#inputName");
+    let email = document.querySelector("#inputEmail");
+    let pass = document.querySelector("#inputPassword");
+
+    let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if (name.value == "") return alert('El campo nombre no puede ir vacio');
+    if (name.value.length < 3) return alert('El nombre debe de tener almenos 3 caracteres')
+    if (email.value == "") return alert('El campo email no puede ir vacio');
+    if (!emailRegex.test(email.value)) return alert('Ingresa un email valido');
+    if (pass.value == "") return alert('La contraseña no puede ir vacia')
+    if (pass.value.length < 6) return alert('La contraseña es demasiado corta')
+
+    signup()
+}
+
 function signup() {
     var user = {};
     user.name = document.querySelector("#inputName").value;
